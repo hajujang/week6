@@ -18,7 +18,7 @@ exports.handler = async function(event) {
 
   // get the minimum number of bedrooms from the querystring parameters
   let minBedrooms = event.queryStringParameters.minBedrooms
-
+  
   // read listings CSV file from disk
   let listingsFile = fs.readFileSync(`./listings.csv`)
   
